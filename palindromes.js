@@ -11,3 +11,24 @@ function palindrome(str) {
 }
 
 palindrome("car")
+
+// First Udemy Algorithms Course Solution
+
+function palindromeOne(str) {
+    let reversedStr = str.split('').reverse().join('');
+    
+    return str === reversedStr;
+}
+
+palindromeOne("car")
+
+// Second Udemy Algorithms Course Solution
+
+function palindromeTwo(str) {
+    return str.split('').every((char, i) => {
+      return char === str[str.length - i - 1];
+
+    })
+}
+
+palindromeTwo("car")
